@@ -674,6 +674,97 @@ function equal5(){
 }
 ```
 
+## [Training JS #3: Basic data types--String](https://www.codewars.com/kata/571edea4b625edcb51000d8e)
+
+misson 1: I've create three function, and defined some global variables, please select some variables that can make up the name of the function, and return them(Please note the uppercase and lowercase letters are different).
+
+misson 2: After misson 1 finished. you should click "Attempt" to see my three questions, and write the answer in function answer1, answer2,answer3
+
+```
+var a1="A",a2="a",b1="B",b2="b",c1="C",c2="c",d1="D",d2="d",e1="E",e2="e",n1="N",n2="n"
+
+function Dad(){
+  //select some variable to combine "Dad"
+  return d1+a2+d2;
+}
+
+function Bee(){
+  //select some variable to combine "Bee"
+  return b1+e2+e2;
+}
+
+function banana(){
+  //select some variable to combine "banana"
+  return b2+a2+n2+a2+n2+a2;
+}
+
+//answer some questions if you finished works above
+function answer1(){
+  //the answer should be "yes" or "no"
+  return "no";
+}
+
+function answer2(){
+  //the answer should be "yes" or "no"
+  return "no";
+}
+
+function answer3(){
+  //the answer should be "yes" or "no"
+  return "yes";
+}
+```
+
+## [Training JS #4: Basic data types--Array](https://www.codewars.com/kata/571effabb625ed9b0600107a)
+
+I've written five functions. Each function receives a parameter arr which is an array. Complete the functions using arr inside the function bodies.
+
+```
+function getLength(arr){
+  return arr.length;
+}
+
+function getFirst(arr){
+  return arr[0];
+}
+
+function getLast(arr){
+  return arr[arr.length-1];
+}
+
+function pushElement(arr){
+  arr.push(1);
+  return arr;
+}
+
+function popElement(arr){
+  arr.pop();
+  return arr;
+}
+```
+
+## [Training JS #5: Basic data types--Object](https://www.codewars.com/kata/571f1eb77e8954a812000837)
+
+Give you a function animal, accept 1 parameter: obj like this: {name: "dog", legs: 4, color: "white"}
+
+and return a string like this: "This white dog has 4 legs."
+
+```
+function animal(obj){
+  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+}
+```
+
+## [Training JS #6: Basic data types--Boolean and conditional statements if..else](https://www.codewars.com/kata/571f832f07363d295d001ba8)
+
+Coding in function trueOrFalse, function accept 1 parameters: val, try to use the conditional statement if...else, if val value is false (val==false or it can convert to false), should return a string "false", if not, return a string "true".
+
+```
+function trueOrFalse(val){
+  return val ? true : false;             
+}
+```
+
 ## [Training JS #7: if...else and ternary operator](https://www.codewars.com/kata/57202aefe8d6c514300001fd)
 
 Complete function saleHotdogs/SaleHotDogs/sale_hotdogs, function accepts 1 parameter:n, n is the number of hotdogs a customer will buy, different numbers have different prices (refer to the following table), return how much money will the customer spend to buy that number of hotdogs.
