@@ -379,6 +379,22 @@ function getAverage(marks){
 }
 ```
 
+## [Gravity Flip](codewars.com/kata/5f70c883e10f9e0001c89673)
+
+Bob is bored during his physics lessons so he's built himself a toy box to help pass the time. The box is special because it has the ability to change gravity.
+
+There are some columns of toy cubes in the box arranged in a line. The i-th column contains a_i cubes. At first, the gravity in the box is pulling the cubes downwards. When Bob switches the gravity, it begins to pull all the cubes to a certain side of the box, d, which can be either 'L' or 'R' (left or right).
+
+Given the initial configuration of the cubes in the box, find out how many cubes are in each of the n columns after Bob switches the gravity.
+
+Examples (input -> output:
+- 'R', [3, 2, 1, 2]      ->  [1, 2, 2, 3]
+- 'L', [1, 4, 5, 3, 5 ]  ->  [5, 5, 4, 3, 1]
+
+```
+const flip = (d, a) => d === "R" ? a.sort((a, b) => a - b) : a.sort((a, b) => b - a)
+```
+
 ## [I love you, a little, a lot, passionately...not at all](https://www.codewars.com/kata/57f24e6a18e9fad8eb000296)
 
 Who remembers back to their time in the schoolyard, when girls would take a flower and tear its petals, saying each of the following phrases each time a petal was torn:
